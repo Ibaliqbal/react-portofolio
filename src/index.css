@@ -12,21 +12,21 @@
 }
 
 .navbar li a.active {
-  @apply text-sky-500 px-3 py-1 rounded-md text-lg relative;
+  @apply text-sky-700 px-3 py-1 rounded-md text-lg relative;
 }
 .navbar li a:hover {
-  @apply text-sky-500 px-3 py-1 rounded-md text-lg relative;
+  @apply text-sky-700 px-3 py-1 rounded-md text-lg relative;
 }
 .navbar li a.active::after {
-  @apply absolute inline-block w-[78%] scale-x-[1] h-6 right-2 border-b-2 border-b-sky-500;
+  @apply absolute inline-block w-[78%] scale-x-[1] h-6 right-2 border-b-2 border-b-sky-700;
   content: "";
 }
 .navbar li a:hover::after {
-  @apply absolute inline-block w-[78%] scale-x-[1] h-6 right-2 border-b-2 border-b-sky-500;
+  @apply absolute inline-block w-[78%] scale-x-[1] h-6 right-2 border-b-2 border-b-sky-700;
   content: "";
 }
 
 .title::before {
-  @apply absolute lg:text-7xl text-4xl text-sky-500 opacity-50 font-bold top-[50%];
+  @apply absolute lg:text-7xl text-4xl text-sky-700 opacity-50 font-bold top-[50%];
   content: "IQBAL MUTHAHHARY";
 }
