@@ -45,7 +45,7 @@ const sosials = [
 
 const About = () => {
   return (
-    <main className="w-full h-[80vh]">
+    <main className="w-full md:h-[80vh] mb-10">
       <section className="container h-full pt-6">
         <h1 className="text-sky-700 font-bold text-center md:text-4xl text-2xl">
           ABOUT ME

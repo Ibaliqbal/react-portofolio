@@ -7,7 +7,7 @@ import TypingAnimator from "react-typing-animator"
 const Home = () => {
   const textTitle = ["My Name is Iqbal Muthahhary", "And you can call me Iqbal"]
   return (
-    <main className="w-full h-[80vh]">
+    <main className="w-full md:h-[90vh]">
       <section className="container h-full">
         <div className="w-full h-full flex items-center flex-col md:flex-row px-2 gap-6 pt-10">
           <motion.div
@@ -43,7 +43,7 @@ const Home = () => {
               CONTACT ME
             </a>
           </motion.div>
-          <div className="md:w-1/2 w-full grid place-items-center">
+          <div className="md:w-1/2 w-full grid place-items-center mb-5">
             <motion.div
               className="relative bg-black lg:w-[500px] rounded-xl lg:h-[500px] md:w-[300px] md:h-[300px] w-[250px] h-[250px]"
               initial={{ opacity: 0, x: 50, y: -50 }}
