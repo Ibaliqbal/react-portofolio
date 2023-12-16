@@ -4,7 +4,6 @@ import Navbar from './Components/Navbar'
 import Home from './Components/Home'
 import About from './Components/About'
 import Portofolio from "./Components/Portofolio"
-import Skill from './Components/Skill'
 import Contact from './Components/Contact'
 
 function App() {
@@ -18,7 +17,6 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/portofolio" element={<Portofolio />} />
-          <Route path="/skill" element={<Skill />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </AnimatePresence>
