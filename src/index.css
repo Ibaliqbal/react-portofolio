@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slide-in {
+  @apply fixed top-0 left-0 w-full h-[100vh] origin-right;
+  background: #0f0f0f;
+}
+.slide-out {
+  @apply fixed top-0 left-0 w-full h-[100vh] origin-left;
+  background: #0f0f0f;
+}
+
+.navbar li a.active {
+  @apply bg-sky-500 text-black border-black border-2 p-2 rounded-full text-lg;
+}
