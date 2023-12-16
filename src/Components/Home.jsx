@@ -23,8 +23,8 @@ const Home = () => {
                 <TypingAnimator
                   textArray={textTitle}
                   loop
-                  cursorColor="##0369a1"
-                  textColor="##0369a1"
+                  cursorColor="#0369a1"
+                  textColor="#0369a1"
                   typingSpeed={60}
                   delaySpeed={1000}
                   backspace

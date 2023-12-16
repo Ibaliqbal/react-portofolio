@@ -4,7 +4,7 @@ const PortoList = lazy(() => import("./PortoList"));
 
 function Portofolio() {
   return (
-    <main className="w-full">
+    <main className="w-full h-full">
       <section className="container h-full pt-6">
         <h1 className="text-sky-700 font-bold text-center md:text-4xl text-2xl">
           PORTOFOLIO

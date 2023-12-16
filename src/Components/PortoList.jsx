@@ -77,7 +77,7 @@ function PortoList() {
         <section className="w-full px-3 grid gap-4">
           <div className="grid gap-2">
             <h1 className="text-xl font-bold">{porto.title}</h1>
-            <p className="text-lg h-[150px]">{porto.description}</p>
+            <p className="text-lg lg:h-[150px] h-[500px]">{porto.description}</p>
           </div>
           <div className="flex gap-4 mb-3">
             {porto.tech.map((list, i) => {
