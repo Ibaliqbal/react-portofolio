@@ -10,6 +10,7 @@ import RouterIcon from "../assets/react-router-dom.svg";
 import TailwindIcon from "../assets/tailwindcss.svg";
 import ReduxIcon from "../assets/react-redux.svg";
 import ChakraIcon from "../assets/chakra.svg";
+import { easeInOut } from "framer-motion";
 
 const portofolio = [
   {
@@ -61,11 +62,14 @@ function PortoList() {
   return portofolio.map((porto, i) => {
     return (
       <motion.article
-        className="w-full bg-slate-200 shadow-2xl grid gap-4 pb-3 rounded-md group overflow-hidden"
+        className="w-full bg-slate-200 shadow-2xl grid gap-4 pb-3 rounded-md group overflow-hidden cursor-grabbing"
         key={porto.id}
+        drag
+        dragElastic={1}
+        dragConstraints={{left: 0, top: 0, right: 0, bottom: 0}}
         initial={{ opacity: 0, y: -200, x: -50 }}
         animate={{ opacity: 1, y: 0, x: 0 }}
-        transition={{ duration: 1, delay: i * 0.3 }}
+        transition={{ duration: 1, delay: i * 0.3, ease: "easeInOut" }}
       >
         <div className="">
           <img
@@ -78,7 +82,7 @@ function PortoList() {
           <div className="grid gap-2">
             <h1 className="text-xl font-bold">{porto.title}</h1>
             <p className="text-lg lg:h-[150px] h-[500px]">{porto.description}</p>
-          </div>
+          </div> 
           <div className="flex gap-4 mb-3">
             {porto.tech.map((list, i) => {
               return (

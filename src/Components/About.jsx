@@ -12,6 +12,7 @@ import CssIcon from "../assets/css.svg";
 import JsIcon from "../assets/javascript.svg";
 import PhpIcon from "../assets/php.svg";
 import { FaLinkedin, FaInstagram, FaGithubAlt } from "react-icons/fa";
+import { easeInOut } from "framer-motion";
 
 const skills = [
   HtmlIcon,
@@ -56,7 +57,7 @@ const About = () => {
               className="relative bg-black lg:w-[500px] rounded-xl lg:h-[500px] md:w-[300px] md:h-[300px] w-[250px] h-[250px]"
               initial={{ opacity: 0, x: 50, y: -50 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
-              transition={{ duration: 2 }}
+              transition={{ duration: 2, ease: "easeInOut" }}
             >
               <img
                 src={AboutImage}
@@ -70,7 +71,7 @@ const About = () => {
             :w-1/2 w-full md:px-5"
             initial={{ opacity: 0, x: -50, y: -50 }}
             animate={{ opacity: 1, x: 0, y: 0 }}
-            transition={{ duration: 2 }}
+            transition={{ duration: 2, ease: "easeInOut" }}
           >
             <h1 className="lg:text-6xl text-4xl font-bold mb-4">
               Hi, I'm <span className="text-sky-500">Iqbal Muthahhary</span>

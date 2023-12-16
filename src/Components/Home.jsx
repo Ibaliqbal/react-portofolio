@@ -2,22 +2,25 @@ import React from "react";
 import transition from "../transition";
 import ProfileImage from "../assets/profile.svg";
 import { motion } from "framer-motion";
-import TypingAnimator from "react-typing-animator"
+import TypingAnimator from "react-typing-animator";
+import { easeInOut } from "framer-motion";
 
 const Home = () => {
-  const textTitle = ["My Name is Iqbal Muthahhary", "And you can call me Iqbal"]
+  const textTitle = [
+    "My Name is Iqbal Muthahhary",
+    "And you can call me Iqbal",
+  ];
   return (
-    <main className="w-full md:h-[90vh]">
+    <main className="w-full md:h-[90vh] mb-10">
       <section className="container h-full">
         <div className="w-full h-full flex items-center flex-col md:flex-row px-2 gap-6 pt-10">
           <motion.div
-            className="md
-            :w-1/2 w-full md:px-5 title relative"
+            className="md:w-1/2 w-full md:px-5 title relative"
             initial={{ opacity: 0, x: -50, y: -50 }}
             animate={{ opacity: 1, x: 0, y: 0 }}
-            transition={{ duration: 2 }}
+            transition={{ duration: 2, ease: "easeInOut" }}
           >
-            <h1 className="lg:text-6xl text-4xl font-bold lg:mb-4 mb-24">
+            <h1 className="lg:text-6xl text-4xl font-bold lg:mb-20 mb-24">
               Hi Everyone 🙌,
               <span className="block mt-2">
                 <TypingAnimator
@@ -48,7 +51,7 @@ const Home = () => {
               className="relative bg-black lg:w-[500px] rounded-xl lg:h-[500px] md:w-[300px] md:h-[300px] w-[250px] h-[250px]"
               initial={{ opacity: 0, x: 50, y: -50 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
-              transition={{ duration: 2 }}
+              transition={{ duration: 2, ease: "easeInOut" }}
             >
               <img
                 src={ProfileImage}

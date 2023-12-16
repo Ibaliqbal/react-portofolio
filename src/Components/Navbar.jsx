@@ -9,7 +9,7 @@ const Navbar = () => {
       <section className="container">
         <div className="w-full flex items-center justify-between px-2 py-6">
           <div className="logo">
-            <Link className="text-sky-700 font-semibold text-xl lg:text-2xl" to={"/"}>
+            <Link className="text-sky-700 font-semibold text-xl lg:text-3xl" to={"/"}>
               Iqbal Muthahhary
             </Link>
           </div>
