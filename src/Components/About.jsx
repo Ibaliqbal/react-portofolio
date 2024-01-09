@@ -1,7 +1,7 @@
 import React from "react";
 import transition from "../transition";
 import { motion } from "framer-motion";
-import AboutImage from "../assets/about.svg"
+import AboutImage from "../assets/about.svg";
 import ReactIcon from "../assets/react.svg";
 import TailwindcssIcon from "../assets/tailwindcss.svg";
 import ReduxIcon from "../assets/react-redux.svg";
@@ -11,13 +11,14 @@ import HtmlIcon from "../assets/html.svg";
 import CssIcon from "../assets/css.svg";
 import JsIcon from "../assets/javascript.svg";
 import PhpIcon from "../assets/php.svg";
+import TsIcon from "../assets/typescript.svg";
 import { FaLinkedin, FaInstagram, FaGithubAlt } from "react-icons/fa";
-import { easeInOut } from "framer-motion";
 
 const skills = [
   HtmlIcon,
   CssIcon,
   JsIcon,
+  TsIcon,
   TailwindcssIcon,
   PhpIcon,
   ReactIcon,
