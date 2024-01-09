@@ -59,6 +59,7 @@ const portofolio = [
   },
 ];
 function PortoList() {
+  document.title = "Portofolio | Projects"
   return portofolio.map((porto, i) => {
     return (
       <motion.article

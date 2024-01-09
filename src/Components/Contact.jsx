@@ -5,9 +5,10 @@ import ContactImage from "../assets/contact.svg";
 import { FaWhatsapp, FaInstagram, FaMailBulk } from "react-icons/fa";
 
 const Contact = () => {
+  document.title = "Portofolio | Contact"
   return (
     <main className="w-full md:h-[90vh] mb-10">
-      <section className="container h-full">
+      <section className="container h-full pt-6">
         <h1 className="text-sky-700 font-bold text-center md:text-4xl text-2xl">
           CONTACT ME
         </h1>
@@ -29,6 +30,7 @@ const Contact = () => {
           <div className="md:w-1/2 w-full md:px-5 flex flex-col gap-10">
             <motion.a
               className="bg-green-400 px-3 py-6 w-full md:text-3xl flex items-center justify-center gap-4 rounded-lg"
+              href="https://wa.me/087782433528?text=Halo saya ingin bicara dengan Iqbal Muthahhary"
               initial={{ opacity: 0, x: -50, y: -50 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
               transition={{ duration: 2, ease: "easeInOut" }}
@@ -37,6 +39,7 @@ const Contact = () => {
             </motion.a>
             <motion.a
               className="bg-red-500 px-3 py-6 w-full md:text-3xl flex items-center justify-center gap-4 rounded-lg"
+              href="mailto: iqbalmuthahhary@gmail.com"
               initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 2, ease: "easeInOut" }}
@@ -45,6 +48,7 @@ const Contact = () => {
             </motion.a>
             <motion.a
               className="bg-gradient-to-r from-purple-500 to-pink-500 px-3 py-6 w-full md:text-3xl flex items-center justify-center gap-4 rounded-lg"
+              href="https://instagram.com/muthahhary_iqbal?igshid=MzNlNGNkZWQ4Mg=="
               initial={{ opacity: 0, x: -100, y: 100 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
               transition={{ duration: 2, ease: "easeInOut" }}

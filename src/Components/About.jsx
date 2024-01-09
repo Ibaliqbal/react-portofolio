@@ -35,7 +35,7 @@ const sosials = [
   },
   {
     name: "Instagram",
-    link: "https://www.linkedin.com/in/iqbal-muthahhary-muthahhary-5120b6278",
+    link: "https://instagram.com/muthahhary_iqbal?igshid=MzNlNGNkZWQ4Mg==",
     icon: FaInstagram,
   },
   {
@@ -46,6 +46,7 @@ const sosials = [
 ];
 
 const About = () => {
+  document.title = "Portofolio | About"
   return (
     <main className="w-full md:h-[80vh] mb-10">
       <section className="container h-full pt-6">

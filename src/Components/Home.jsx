@@ -40,7 +40,7 @@ const Home = () => {
               University majoring in Computer Science{" "}
             </p>
             <a
-              href="https://wa.me/087782433528?text=Halo saya ingin dengan Iqbal Muthahhary"
+              href="https://wa.me/087782433528?text=Halo saya ingin bicara dengan Iqbal Muthahhary"
               className="bg-sky-500 font-bold lg:text-xl text-md px-6 py-3 rounded-lg"
             >
               CONTACT ME
